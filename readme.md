@@ -37,9 +37,10 @@ git clone https://gin.g-node.org/nawrotlab/EI_clustered_network
 cd EI_clustered_network
 git annex get *
 ```
-Alternatively, utilize the provided script to download the data:
+Alternatively, utilize the provided script to download the data. The script accenpts an optional flag -e
+to download only the experimental data.
 ```bash
-./Download.sh
+./Download.sh # or ./Download.sh -e
 ```
 This script creates a ***'data'*** folder in the repository and initiates the download. 
 It verifies if the data is already present and skips download if it exists. 
