@@ -26,18 +26,24 @@ python figX.py
 Replace **'X'** with the figure number. This will generate **'figX.pdf'**, or **'figX.png'** within the **'fig_codes'** folder.
 
 ## Accessing Data
-Experimental data and simulation results are also available on G-Node GIN in the repository 
-[nawrotlab/EI_clustered_network](https://gin.g-node.org/nawrotlab/EI_clustered_network).
+Experimental data and simulation results are also available on G-Node GIN in the repository following repositories:
+- Experimental data [nawrotlab/delayed_center-out_uncertainty_Riehle](https://gin.g-node.org/nawrotlab/delayed_center-out_uncertainty_Riehle)
+- preprocessed and simulated data [nawrotlab/EI_clustered_network](https://gin.g-node.org/nawrotlab/EI_clustered_network).
 This repository is roughly 16GB in size. To download the data via the web interface, 
 follow the instructions on the provided link. We recommend using the command line and 
 [git-annex](https://git-annex.branchable.com/install/) for downloads:
 
 ```bash
+mkdir data
+git clone https://gin.g-node.org/nawrotlab/delayed_center-out_uncertainty_Riehle
+mv -r delayed_center-out_uncertainty_Riehle/pickle data/experimental_data
 git clone https://gin.g-node.org/nawrotlab/EI_clustered_network
 cd EI_clustered_network
 git annex get *
+mv -r preprocessed_and_simulated_data ../data/
 ```
-Alternatively, utilize the provided script to download the data. The script accenpts an optional flag -e
+
+Alternatively, utilize the provided script to download the data. The script accepts an optional flag -e
 to download only the experimental data.
 ```bash
 ./Download.sh # or ./Download.sh -e
