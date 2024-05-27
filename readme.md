@@ -29,28 +29,34 @@ Replace **'X'** with the figure number. This will generate **'figX.pdf'**, or **
 Experimental data and simulation results are also available on G-Node GIN in the repository following repositories:
 - Experimental data [nawrotlab/delayed_center-out_uncertainty_Riehle](https://gin.g-node.org/nawrotlab/delayed_center-out_uncertainty_Riehle)
 - preprocessed and simulated data [nawrotlab/EI_clustered_network](https://gin.g-node.org/nawrotlab/EI_clustered_network).
-This repository is roughly 16GB in size. To download the data via the web interface, 
-follow the instructions on the provided link. We recommend using the command line and 
-[git-annex](https://git-annex.branchable.com/install/) for downloads:
+This repository is roughly 16GB in size.
 
-```bash
-mkdir data
-git clone https://gin.g-node.org/nawrotlab/delayed_center-out_uncertainty_Riehle
-mv -r delayed_center-out_uncertainty_Riehle/pickle data/experimental_data
-git clone https://gin.g-node.org/nawrotlab/EI_clustered_network
-cd EI_clustered_network
-git annex get *
-mv -r preprocessed_and_simulated_data ../data/
-```
+ 
+### Data Setup
 
-Alternatively, utilize the provided script to download the data. The script accepts an optional flag -e
-to download only the experimental data.
-```bash
-./Download.sh # or ./Download.sh -e
-```
-This script creates a ***'data'*** folder in the repository and initiates the download. 
-It verifies if the data is already present and skips download if it exists. 
-Note that the download may take a considerable amount of time, and git-annex might appear stalled but will resume eventually.
+To set up the required data for this project, you have two options:
+
+1. **Manual Download**:
+   - **Via Web Interface:** Follow the instructions on the provided link and GIN.
+   - **Using Command Line with git-annex:** Install [git-annex](https://git-annex.branchable.com/install/) and execute the following commands:
+
+     ```bash
+     mkdir data
+     git clone https://gin.g-node.org/nawrotlab/delayed_center-out_uncertainty_Riehle
+     mv delayed_center-out_uncertainty_Riehle/pickle data/experimental_data
+     git clone https://gin.g-node.org/nawrotlab/EI_clustered_network
+     cd EI_clustered_network
+     git annex get *
+     mv preprocessed_and_simulated_data ../data/
+     ```
+
+2. **Automated Download**:
+   Run the provided script (`Download.sh`) to automate the download process and ensure the data is placed correctly within the data folder. You can use an optional flag `-e` to download only the experimental data.
+
+   ```bash
+   ./Download.sh # or ./Download.sh -e
+
+  This script creates a 'data' folder in the repository and initiates the download. It checks if the data already exists and skips the download accordingly. Please note that the download process may take some time, and git-annex operations might appear stalled but will eventually resume.
 
 ## Environment Setup
 The `environment.yml` file contains necessary packages to execute the code. To create a Conda environment:
