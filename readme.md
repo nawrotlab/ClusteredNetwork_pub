@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11353865.svg)](https://doi.org/10.5281/zenodo.11353865)
 # Spiking attractor model of motor cortex explains modulation of neural and behavioral variability by prior target information
 This is a Python implementation of the E/I clustered neural network together with codes to reproduce the results presented in the following paper:
 
@@ -37,8 +38,9 @@ python figX.py
 Replace **'X'** with the figure number. This will generate **'figX.pdf'**, or **'figX.png'** within the **'fig_codes'** folder.
 
 ## Accessing Data
-Experimental data and simulation results are also available on G-Node GIN in the repository following repositories:
+Experimental data and simulation results are also available on G-Node GIN in the following repositories:
 - Experimental data [nawrotlab/delayed_center-out_uncertainty_Riehle](https://gin.g-node.org/nawrotlab/delayed_center-out_uncertainty_Riehle)
+  doi:[10.12751/g-node.icqgt5y](https://doi.gin.g-node.org/10.12751/g-node.icqgt5y).
 - preprocessed and simulated data [nawrotlab/EI_clustered_network](https://gin.g-node.org/nawrotlab/EI_clustered_network).
 This repository is roughly 16GB in size.
 
