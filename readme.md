@@ -18,6 +18,18 @@ This project utilizes Python and Nest Simulator for analyzing experimental data,
 - **`data/`**: Includes all experimental and simulated data required to reproduce the figures. The data is hosted on G-Node GIN and can be downloaded using the instructions below.
 - **`src/`**: Contains Python scripts for executing SNN simulations and analyzing simulated/experimental data.
 
+## Project Structure
+
+This project utilizes Python and Nest Simulator for analyzing experimental data, simulating spiking neural networks (SNN), and producing figures.
+
+- **`fig_codes/`**: Contains Python scripts to generate all figures used in the paper.
+  
+- **`data/`**: Hosts all experimental and simulated data necessary to replicate the figures. The data is hosted on G-Node GIN and can be downloaded using the instructions provided in the [Data Setup](#data-setup) section below.
+
+- **`src/`**: Includes Python scripts for executing SNN simulations and analyzing both simulated and experimental data.
+
+
+
 ## Reproducing figures
 To recreate specific figures, execute the following command within the fig_codes directory:
 ```bash
