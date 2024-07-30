@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11353865.svg)](https://doi.org/10.5281/zenodo.11353865)
-# Spiking attractor model of motor cortex explains modulation of neural and behavioral variability by prior target information
-This is a Python implementation of the E/I clustered neural network together with codes to reproduce the results presented in the following paper:
+# Spiking Attractor Model of Motor Cortex
+This repository contains the Python implementation of the E/I clustered neural network and the scripts to reproduce the results presented in the paper:
 
 **Vahid Rostami, Thomas Rost, Felix Schmitt, Sacha van Albada, Alexa Riehle, Martin Nawrot. Spiking attractor model of motor cortex explains modulation of neural and behavioral variability by prior target information. Nat Communication 15, 6304 (2024). https://doi.org/10.1038/s41467-024-49889-4**
 
@@ -10,13 +10,8 @@ This is a Python implementation of the E/I clustered neural network together wit
 - [Accessing Data](#accessing-data)
 - [Environment Setup](#environment-setup)
 - [Docker Image for Code Execution](#docker-image-for-code-execution)
-
-## Project Structure
-This project utilizes Python and Nest Simulator for analyzing experimental data, simulating spiking neural networks (SNN), and producing figures.
-
-- **`fig_codes/`**: Contains Python scripts to plot all paper figures.
-- **`data/`**: Includes all experimental and simulated data required to reproduce the figures. The data is hosted on G-Node GIN and can be downloaded using the instructions below.
-- **`src/`**: Contains Python scripts for executing SNN simulations and analyzing simulated/experimental data.
+- [Citing](#citing)
+- [Support](#support)
 
 ## Project Structure
 
@@ -113,7 +108,22 @@ You can circumvent this by creating a bridge manually:
 docker network create --driver bridge common
 docker run -d -it --network common --name clusternet --mount type=bind,source="$(pwd)"/ClusteredNetwork_pub,target=/app fschmitt/clustered_network_pub:nest2_20
 ```
+## Citing
 
-Please cite the paper if you use any part of this code.
+Please cite the paper if you use any part of this code:
 
-If you encounter any problems, feel free to create a GitHub issue.
+@article{rostami2024spiking,
+  title={Spiking attractor model of motor cortex explains modulation of neural and behavioral variability by prior target information},
+  author={Rostami, Vahid and Rost, Thomas and Schmitt, Felix and van Albada, Sacha and Riehle, Alexa and Nawrot, Martin},
+  journal={Nature Communications},
+  volume={15},
+  pages={6304},
+  year={2024},
+  publisher={Nature Publishing Group},
+  doi={10.1038/s41467-024-49889-4}
+}
+
+
+## Support
+
+If you encounter any issues, feel free to create a GitHub issue.
