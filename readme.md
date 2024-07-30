@@ -112,16 +112,16 @@ docker run -d -it --network common --name clusternet --mount type=bind,source="$
 
 Please cite the paper if you use any part of this code:
 
-```
+```bibtex
   @article{rostami2024EIClustered,
-  title={Spiking attractor model of motor cortex explains modulation of neural and behavioral variability by prior target information},
-  author={Rostami, Vahid and Rost, Thomas and Schmitt, Felix and van Albada, Sacha and Riehle, Alexa and Nawrot, Martin},
-  journal={Nature Communications},
-  volume={15},
-  pages={6304},
-  year={2024},
-  publisher={Nature Publishing Group},
-  doi={10.1038/s41467-024-49889-4}
+    title={Spiking attractor model of motor cortex explains modulation of neural and behavioral variability by prior target information},
+    author={Rostami, Vahid and Rost, Thomas and Schmitt, Felix and van Albada, Sacha and Riehle, Alexa and Nawrot, Martin},
+    journal={Nature Communications},
+    volume={15},
+    pages={6304},
+    year={2024},
+    publisher={Nature Publishing Group},
+    doi={10.1038/s41467-024-49889-4}
 }
 ```
 
