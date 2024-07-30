@@ -1,5 +1,5 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11353865.svg)](https://doi.org/10.5281/zenodo.11353865)
-# Spiking Attractor Model of Motor Cortex
+# Clustered Neural Network Model of Motor Cortex
 This repository contains the Python implementation of the E/I clustered neural network and the scripts to reproduce the results presented in the paper:
 
 **Vahid Rostami, Thomas Rost, Felix Schmitt, Sacha van Albada, Alexa Riehle, Martin Nawrot. Spiking attractor model of motor cortex explains modulation of neural and behavioral variability by prior target information. Nat Communication 15, 6304 (2024). https://doi.org/10.1038/s41467-024-49889-4**
