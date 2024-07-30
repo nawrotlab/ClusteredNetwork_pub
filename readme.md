@@ -2,7 +2,7 @@
 # Spiking attractor model of motor cortex explains modulation of neural and behavioral variability by prior target information
 This is a Python implementation of the E/I clustered neural network together with codes to reproduce the results presented in the following paper:
 
-**Vahid Rostami, Thomas Rost, Felix Schmitt, Sacha van Albada, Alexa Riehle, Martin Nawrot. Spiking attractor model of motor cortex explains modulation of neural and behavioral variability by prior target information. Nat Commun 15, 6304 (2024). https://doi.org/10.1038/s41467-024-49889-4**
+**Vahid Rostami, Thomas Rost, Felix Schmitt, Sacha van Albada, Alexa Riehle, Martin Nawrot. Spiking attractor model of motor cortex explains modulation of neural and behavioral variability by prior target information. Nat Communication 15, 6304 (2024). https://doi.org/10.1038/s41467-024-49889-4**
 
 ## Table of Contents
 - [Project Structure](#project-structure)
